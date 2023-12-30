@@ -1,0 +1,74 @@
+.Hightlights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  width: 100%;
+}
+.titleContainer {
+  width: 60rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleContainer h1 {
+  font-size: 3rem;
+  font-family: "Karla", serif;
+  font-weight: bold;
+}
+
+.thisCode {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: rgb(235, 180, 15);
+}
+.ButtonLayout :hover {
+  color: rgb(235, 180, 15);
+  background-color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+.ButtonLayout :active {
+  color: rgb(249, 248, 244);
+  background-color: rgb(7, 90, 80);
+}
+
+.cardContainer {
+  width: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 200px) {
+  .titleContainer {
+    width: 35rem;
+  }
+
+  .cardContainer {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .titleContainer {
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 3rem;
+    flex-direction: column;
+  }
+
+  .cardContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 658px) {
+  .Hightlights {
+    width: 80%;
+  }
+}
